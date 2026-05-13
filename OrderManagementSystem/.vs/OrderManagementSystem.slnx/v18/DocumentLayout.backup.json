@@ -1,66 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Mg\\OrderManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\bll\\pedidobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\bll\\pedidobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|solutionrelative:src\\ordermanagementsystem\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|solutionrelative:src\\ordermanagementsystem\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\ordermanagementsystem\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|solutionrelative:src\\ordermanagementsystem\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\bll\\produtobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\bll\\produtobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\bll\\clientebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\bll\\clientebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\dto\\clienterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\dto\\clienterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\ordermanagementsystem\\src\\efcore\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\efcore\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|solutionrelative:src\\efcore\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\dto\\listapedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\dto\\listapedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\ordermanagementsystem\\src\\efcore\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\efcore\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|solutionrelative:src\\efcore\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\ordermanagementsystem\\src\\efcore\\contextefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\efcore\\contextefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|solutionrelative:src\\efcore\\contextefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\ordermanagementsystem\\src\\ordermanagementsystem\\ordermanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\ordermanagementsystem\\ordermanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|solutionrelative:src\\ordermanagementsystem\\ordermanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\ordermanagementsystem\\src\\efcore\\efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\efcore\\efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9A4525EA-148C-7287-66F7-0F132D3866EC}|src\\EFCore\\EFCore.csproj|solutionrelative:src\\efcore\\efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\ordermanagementsystem\\src\\library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9F4FED49-3E56-D3F8-4FE1-6D97DCB4E156}|src\\Library\\Library.csproj|solutionrelative:src\\library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\ordermanagementsystem\\src\\ordermanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|c:\\mg\\order-management-system\\ordermanagementsystem\\src\\ordermanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1DBCDCC1-59FA-2161-9CD9-C867689015FD}|src\\OrderManagementSystem\\OrderManagementSystem.csproj|solutionrelative:src\\ordermanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,11 +70,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "src\\OrderManagementSystem\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,185 +83,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
               "RelativeDocumentMoniker": "src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
               "RelativeToolTip": "src\\OrderManagementSystem\\Controllers\\PedidoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T19:47:53.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteRequest.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
-              "RelativeDocumentMoniker": "src\\Library\\DTO\\ClienteRequest.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
-              "RelativeToolTip": "src\\Library\\DTO\\ClienteRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T23:45:15.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\Pedido.cs",
-              "RelativeDocumentMoniker": "src\\EFCore\\Pedido.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\Pedido.cs",
-              "RelativeToolTip": "src\\EFCore\\Pedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T23:36:26.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutoBLL.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
-              "RelativeDocumentMoniker": "src\\Library\\BLL\\ProdutoBLL.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
-              "RelativeToolTip": "src\\Library\\BLL\\ProdutoBLL.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA3wEIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T21:56:20.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PedidoBLL.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\PedidoBLL.cs",
-              "RelativeDocumentMoniker": "src\\Library\\BLL\\PedidoBLL.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\PedidoBLL.cs",
-              "RelativeToolTip": "src\\Library\\BLL\\PedidoBLL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwFcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T20:20:45.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClienteBLL.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
-              "RelativeDocumentMoniker": "src\\Library\\BLL\\ClienteBLL.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
-              "RelativeToolTip": "src\\Library\\BLL\\ClienteBLL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA0wB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T21:02:40.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T23:44:55.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ListaPedidoRequest.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
-              "RelativeDocumentMoniker": "src\\Library\\DTO\\ListaPedidoRequest.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
-              "RelativeToolTip": "src\\Library\\DTO\\ListaPedidoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T20:22:52.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\Cliente.cs",
-              "RelativeDocumentMoniker": "src\\EFCore\\Cliente.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\Cliente.cs",
-              "RelativeToolTip": "src\\EFCore\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T23:43:59.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:47:53.864Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ContextEFCore.cs",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\ContextEFCore.cs",
-              "RelativeDocumentMoniker": "src\\EFCore\\ContextEFCore.cs",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\ContextEFCore.cs",
-              "RelativeToolTip": "src\\EFCore\\ContextEFCore.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvwgAAAAYAAAAAAAAAA==",
+              "Title": "ClienteRequest.cs",
+              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
+              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
+              "RelativeToolTip": "..\\..\\OrderManagementSystem\\src\\Library\\DTO\\ClienteRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T19:22:07.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T23:45:15.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Library.csproj",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\Library.csproj",
-              "RelativeDocumentMoniker": "src\\Library\\Library.csproj",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\Library.csproj",
-              "RelativeToolTip": "src\\Library\\Library.csproj",
+              "DocumentIndex": 4,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\Pedido.cs",
+              "RelativeDocumentMoniker": "src\\EFCore\\Pedido.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\Pedido.cs",
+              "RelativeToolTip": "src\\EFCore\\Pedido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-12T19:02:06.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EFCore.csproj",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\EFCore.csproj",
-              "RelativeDocumentMoniker": "src\\EFCore\\EFCore.csproj",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\EFCore\\EFCore.csproj",
-              "RelativeToolTip": "src\\EFCore\\EFCore.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-12T19:02:00.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\OrderManagementSystem\\appsettings.json",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\appsettings.json",
-              "RelativeToolTip": "src\\OrderManagementSystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-12T19:01:53.448Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T23:36:26.687Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ProdutoBLL.cs",
+              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
+              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
+              "RelativeToolTip": "..\\..\\OrderManagementSystem\\src\\Library\\BLL\\ProdutoBLL.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA3wEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T21:56:20.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClienteBLL.cs",
+              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
+              "RelativeDocumentMoniker": "..\\..\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
+              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
+              "RelativeToolTip": "..\\..\\OrderManagementSystem\\src\\Library\\BLL\\ClienteBLL.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA0wB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T21:02:40.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "src\\OrderManagementSystem\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T23:44:55.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ListaPedidoRequest.cs",
+              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
+              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
+              "RelativeToolTip": "..\\..\\OrderManagementSystem\\src\\Library\\DTO\\ListaPedidoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T20:22:52.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\Cliente.cs",
+              "RelativeDocumentMoniker": "src\\EFCore\\Cliente.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\Cliente.cs",
+              "RelativeToolTip": "src\\EFCore\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T23:43:59.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContextEFCore.cs",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\ContextEFCore.cs",
+              "RelativeDocumentMoniker": "src\\EFCore\\ContextEFCore.cs",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\ContextEFCore.cs",
+              "RelativeToolTip": "src\\EFCore\\ContextEFCore.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T19:22:07.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Library.csproj",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\Library\\Library.csproj",
+              "RelativeDocumentMoniker": "src\\Library\\Library.csproj",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\Library\\Library.csproj",
+              "RelativeToolTip": "src\\Library\\Library.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-12T19:02:06.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EFCore.csproj",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\EFCore.csproj",
+              "RelativeDocumentMoniker": "src\\EFCore\\EFCore.csproj",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\EFCore\\EFCore.csproj",
+              "RelativeToolTip": "src\\EFCore\\EFCore.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-12T19:02:00.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\OrderManagementSystem\\appsettings.json",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\appsettings.json",
+              "RelativeToolTip": "src\\OrderManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-12T19:01:53.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OrderManagementSystem.csproj",
-              "DocumentMoniker": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\OrderManagementSystem.csproj",
+              "DocumentMoniker": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\OrderManagementSystem.csproj",
               "RelativeDocumentMoniker": "src\\OrderManagementSystem\\OrderManagementSystem.csproj",
-              "ToolTip": "C:\\Mg\\OrderManagementSystem\\src\\OrderManagementSystem\\OrderManagementSystem.csproj",
+              "ToolTip": "C:\\Mg\\Order-Management-System\\OrderManagementSystem\\src\\OrderManagementSystem\\OrderManagementSystem.csproj",
               "RelativeToolTip": "src\\OrderManagementSystem\\OrderManagementSystem.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-12T19:01:01.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:01:01.918Z"
             }
           ]
         },

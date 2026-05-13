@@ -19,7 +19,11 @@ public partial class ContextEFCore : DbContext
 
     public virtual DbSet<Pedido> Pedido { get; set; }
 
+    public virtual DbSet<PedidoHistorico> PedidoHistorico { get; set; }
+
     public virtual DbSet<PedidoItem> PedidoItem { get; set; }
+
+    public virtual DbSet<PedidoStatus> PedidoStatus { get; set; }
 
     public virtual DbSet<Produto> Produto { get; set; }
 
@@ -31,11 +35,13 @@ public partial class ContextEFCore : DbContext
     {
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.ClienteId).HasName("PK__Cliente__71ABD087EEFA52A4");
+            entity.HasKey(e => e.ClienteId).HasName("PK__Cliente__71ABD0878FCAC782");
 
-            entity.HasIndex(e => e.Id, "UQ__Cliente__3214EC06E81E5759").IsUnique();
+            entity.HasIndex(e => e.Id, "UQ__Cliente__3214EC06FBD98B67").IsUnique();
 
-            entity.HasIndex(e => e.Documento, "UQ__Cliente__AF73706D91E137A6").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Cliente__A9D10534C198C826").IsUnique();
+
+            entity.HasIndex(e => e.Documento, "UQ__Cliente__AF73706D7FC2FEB8").IsUnique();
 
             entity.Property(e => e.Ativo).HasDefaultValue(true);
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
@@ -47,9 +53,9 @@ public partial class ContextEFCore : DbContext
 
         modelBuilder.Entity<Pedido>(entity =>
         {
-            entity.HasKey(e => e.PedidoId).HasName("PK__Pedido__09BA14304658EFCF");
+            entity.HasKey(e => e.PedidoId).HasName("PK__Pedido__09BA1430ECC0C257");
 
-            entity.HasIndex(e => e.Id, "UQ__Pedido__3214EC0668DB3487").IsUnique();
+            entity.HasIndex(e => e.Id, "UQ__Pedido__3214EC064C55CBAA").IsUnique();
 
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
@@ -59,11 +65,33 @@ public partial class ContextEFCore : DbContext
                 .HasForeignKey(d => d.ClienteId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Pedidos_Clientes");
+
+            entity.HasOne(d => d.PedidoStatus).WithMany(p => p.Pedido)
+                .HasForeignKey(d => d.PedidoStatusId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Pedidos_status");
+        });
+
+        modelBuilder.Entity<PedidoHistorico>(entity =>
+        {
+            entity.HasKey(e => e.PedidoHistoricoId).HasName("PK__PedidoHi__234F9D26B0CCD5F7");
+
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
+
+            entity.HasOne(d => d.Pedido).WithMany(p => p.PedidoHistorico)
+                .HasForeignKey(d => d.PedidoId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Pedidos_PedidoHistorico");
+
+            entity.HasOne(d => d.PedidoStatus).WithMany(p => p.PedidoHistorico)
+                .HasForeignKey(d => d.PedidoStatusId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Pedidosstatus_PedidoHistorico");
         });
 
         modelBuilder.Entity<PedidoItem>(entity =>
         {
-            entity.HasKey(e => e.PedidoItemId).HasName("PK__PedidoIt__4A8A527353DE8A65");
+            entity.HasKey(e => e.PedidoItemId).HasName("PK__PedidoIt__4A8A5273E818E704");
 
             entity.Property(e => e.PrecoUnitario).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.ValorTotal).HasColumnType("decimal(18, 2)");
@@ -79,11 +107,18 @@ public partial class ContextEFCore : DbContext
                 .HasConstraintName("FK_PedidoItens_Produtos");
         });
 
+        modelBuilder.Entity<PedidoStatus>(entity =>
+        {
+            entity.HasKey(e => e.PedidoStatusId).HasName("PK__PedidoSt__8826232A6190AAA3");
+
+            entity.Property(e => e.Nome).HasMaxLength(50);
+        });
+
         modelBuilder.Entity<Produto>(entity =>
         {
-            entity.HasKey(e => e.ProdutoId).HasName("PK__Produto__9C8800E315B8250D");
+            entity.HasKey(e => e.ProdutoId).HasName("PK__Produto__9C8800E354E017D3");
 
-            entity.HasIndex(e => e.Id, "UQ__Produto__3213E83E6ECAAD86").IsUnique();
+            entity.HasIndex(e => e.Id, "UQ__Produto__3213E83EB0E06ACE").IsUnique();
 
             entity.Property(e => e.Ativo).HasDefaultValue(true);
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");

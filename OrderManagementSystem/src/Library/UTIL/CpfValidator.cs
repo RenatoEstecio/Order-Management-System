@@ -7,7 +7,7 @@ namespace Library.UTIL
 {
     public static class CpfValidator
     {
-        public static bool Validar(string cpf)
+        public static bool IsValid(string cpf)
         {
             cpf = Regex.Replace(cpf, @"\D", "");
 

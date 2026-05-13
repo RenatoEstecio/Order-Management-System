@@ -1,7 +1,11 @@
+using EFCore;
+using Library.BLL;
+using Library.Repository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -10,6 +14,15 @@ builder.Services.AddOpenApi();
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ContextEFCore>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ClienteRepository>();
+builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<PedidoRepository>();
+builder.Services.AddScoped<PedidoService>();
+builder.Services.AddScoped<ProdutoRepository>();
+builder.Services.AddScoped<ProdutoService>();
 
 var app = builder.Build();
 
@@ -27,6 +40,7 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = ""; // abre na raiz
     });
 }
+
 
 app.UseHttpsRedirection();
 
