@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/EFCore/EFCore.csproj" />
+  <Project Path="src/Library/Library.csproj" />
+  <Project Path="src/OrderManagementSystem/OrderManagementSystem.csproj" />
+</Solution>
