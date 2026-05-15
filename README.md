@@ -225,7 +225,7 @@ public static decimal Round(decimal value)
 {
     return Math.Round(value, 2, MidpointRounding.AwayFromZero);
 }
-
+```
 
 🚀 Pontos fora do escopo e melhorias futuras
 
