@@ -171,7 +171,7 @@ namespace OrderManagementSystem.Controllers
         }
 
         /// <summary>
-        /// Atualiza o estoque de um produto.
+        /// Atualiza o estoque de um produto, adicionando Exemplo: quantidade = 10, removendo quantidade = -10.
         /// </summary>
         /// <response code="200">Estoque atualizado com sucesso.</response>
         /// <response code="400">Quantidade inválida.</response>
