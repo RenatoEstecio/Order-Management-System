@@ -28,6 +28,21 @@ namespace Library.Repository
                setters.SetProperty(x => x.Ativo, acao));
         }
 
+        public async Task<bool> AtualizarEstoque(string id, int quantidade)
+        {
+            var linhasAfetadas = await _context.Produto
+            .Where(x =>
+                x.Id == id &&
+                (x.EstoqueDisponivel + quantidade) >= 0)
+            .ExecuteUpdateAsync(setters =>
+                setters.SetProperty(
+                    x => x.EstoqueDisponivel,
+                    x => x.EstoqueDisponivel + quantidade
+            ));
+
+            return linhasAfetadas > 0;
+        }
+
         public bool Exists(string id)
         {
             return _context.Produto.Any(x => x.Id == id);
@@ -35,7 +50,7 @@ namespace Library.Repository
 
         public Task<Produto?> Buscar(string id)
         {
-            return _context.Produto.Where(x => x.Id == id).FirstAsync();
+            return _context.Produto.Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<ProdutoListAllResponse> Listar(string? query, int quantidade, int? page)
@@ -66,7 +81,7 @@ namespace Library.Repository
                 {
                     Id = x.Id,
                     Nome = x.Nome,
-                    Preco = x.EstoqueDisponivel
+                    Preco = x.Preco,
                 })
                 .ToListAsync();
 
@@ -90,15 +105,32 @@ namespace Library.Repository
             }
             catch (Exception ex)
             {
-                if (ex.Message.Contains("Unique"))
-                    throw new CustomException("Erro: Produto já cadastrado", HttpStatusCode.BadRequest);
+                if (ex.InnerException != null && ex.InnerException.Message.Contains("UNIQUE"))
+                    throw new CustomException("Produto já cadastrado", HttpStatusCode.Conflict);
                 else
-                    throw new Exception($"Erro ao cadastrar produto: {ex.Message}");
-            }
-            finally
+                    throw new Exception("Erro ao cadastrar produto");
+            }            
+        }
+
+        public async Task<Produto> Alterar(Produto produto)
+        {
+            try
             {
-                await _context.DisposeAsync();
+                _context.Produto.Attach(produto);
+
+                _context.Entry(produto).Property(x => x.Nome).IsModified = true;
+                _context.Entry(produto).Property(x => x.Descricao).IsModified = true;
+                _context.Entry(produto).Property(x => x.UpdatedAt).IsModified = true;
+
+                await _context.SaveChangesAsync();
+
+                return produto;
             }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao alterar produto");
+            }
+            
         }
     }
 }

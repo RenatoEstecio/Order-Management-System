@@ -1,6 +1,7 @@
 ﻿using EFCore;
 using Library.DTO;
 using Library.Repository;
+using Library.RequestDTO;
 using Library.ResponseDTO;
 using Library.ResponseDTO.Clientes;
 using Library.ResponseDTO.Clientess;
@@ -53,12 +54,36 @@ namespace Library.BLL
             return await _repository.Criar(produto);
         }
 
+        public async Task<Produto> Alterar(ProdutoUpdateRequest request, string id)
+        {
+            Produto? produto = await _repository.Buscar(id);
+
+            if (produto == null)
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);
+
+            if (request == null || (request.Nome == null && request.Descricao == null))
+                throw new CustomException("Dados inválidos", HttpStatusCode.BadRequest);
+
+            if(request.Nome is not null)
+                produto.Nome = request.Nome.Trim();
+
+            if (request.Descricao is not null)
+                produto.Descricao = request.Descricao.Trim();
+
+            produto.UpdatedAt = DateTimeHelper.ToSaoPaulo();
+            
+            Validar(produto, false);
+
+            return await _repository.Alterar(produto);
+        }
+
+
         public async Task<ProdutoDetailsResponse> Buscar(string id)
         {
             Produto? produto = await _repository.Buscar(id);
 
             if (produto is null)
-                throw new CustomException("Não encontrado", HttpStatusCode.BadRequest);
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);
 
             return new ProdutoDetailsResponse(produto);
         }
@@ -68,22 +93,36 @@ namespace Library.BLL
             if (preco <= 0)
                 throw new CustomException("Preço inválido", HttpStatusCode.BadRequest);       
         }      
-
-        public void AtualizarEstoque(int quantidade)
-        {
-             
-        }
-
+        
         public async Task AtivarOuDesativar(string id, bool acao)
         {
             if (!_repository.Exists(id))
-                throw new CustomException("Não encontrado", HttpStatusCode.BadRequest);
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);
 
             await _repository.AtivarOuDesativar(id, acao);
         }
 
+        public async Task AtualizarEstoque(string id, int quantidade)
+        {
+            if (quantidade == 0)
+                throw new CustomException("Quantidade inválida", HttpStatusCode.BadRequest);
 
-        private static void Validar(Produto produto) 
+            Produto? produto = await _repository.Buscar(id);
+
+            if (produto == null)
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);          
+
+            if (!(produto.EstoqueDisponivel + quantidade >= 0))
+                throw new CustomException($"Restam {produto.EstoqueDisponivel} unidade(s)", HttpStatusCode.Conflict);
+
+            bool result = await _repository.AtualizarEstoque(id, quantidade);
+
+            if(!result)
+                throw new CustomException($"Falha ao atualizar estoque", HttpStatusCode.InternalServerError);
+        }
+
+
+        private static void Validar(Produto produto, bool criacao = true) 
         {
             if (string.IsNullOrWhiteSpace(produto.Nome))
                 throw new CustomException("Nome obrigatório", HttpStatusCode.BadRequest);
@@ -91,11 +130,14 @@ namespace Library.BLL
             if (string.IsNullOrWhiteSpace(produto.Descricao))
                 throw new CustomException("Descricao obrigatório", HttpStatusCode.BadRequest);
 
-            if (produto.Preco <= 0)
-                throw new CustomException("Preço inválido", HttpStatusCode.BadRequest);
+            if (criacao)
+            {
+                if (produto.Preco <= 0)
+                    throw new CustomException("Preço inválido", HttpStatusCode.BadRequest);
 
-            if (produto.EstoqueDisponivel < 0)
-                throw new CustomException("Estoque inválido", HttpStatusCode.BadRequest);
+                if (produto.EstoqueDisponivel <= 0)
+                    throw new CustomException("Estoque inválido", HttpStatusCode.BadRequest);
+            }
         }      
     }
 }

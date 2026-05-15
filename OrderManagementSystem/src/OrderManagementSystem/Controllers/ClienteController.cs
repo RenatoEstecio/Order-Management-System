@@ -20,8 +20,16 @@ namespace OrderManagementSystem.Controllers
         {
             _service = service;
         }
-       
-        [HttpPost]
+
+        /// <summary>
+        /// Cria um novo cliente.
+        /// </summary>
+        /// <response code="200">Cliente criado com sucesso.</response>
+        /// <response code="400">Dados inválidos.</response>
+        /// <response code="409">Cliente já cadastrado.</response>
+        /// <response code="500">Erro Interno de Processamento.</response>
+
+        [HttpPost]            
         public async Task<ActionResult<ClienteCreateResponse>> Create(ClienteRequest clienteRequest)       
         {         
             try
@@ -45,7 +53,14 @@ namespace OrderManagementSystem.Controllers
             }
            
         }
-        
+
+        /// <summary>
+        /// Lista clientes de forma paginada.
+        /// </summary>
+        /// <response code="200">Clientes listados com sucesso.</response>
+        /// <response code="400">Quantidade ou página inválida.</response>
+        /// <response code="404">Nenhum resultado encontrado.</response>
+        /// <response code="500">Erro Interno de Processamento.</response>
         [HttpGet]
         public async Task<ActionResult<ClienteListAllResponse>> GetAll(string? query, int quantidade = 10, int page = 1)
         {
@@ -66,6 +81,12 @@ namespace OrderManagementSystem.Controllers
             }
         }
 
+        /// <summary>
+        /// Busca um cliente pelo identificador.
+        /// </summary>
+        /// <response code="200">Cliente encontrado com sucesso.</response>
+        /// <response code="404">Cliente não encontrado ou identificador inválido.</response>
+        /// <response code="500">Erro Interno de Processamento.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<ClienteGetDetailsResponse>> GetById(Guid id)
         {
@@ -73,7 +94,7 @@ namespace OrderManagementSystem.Controllers
             {
                 return Ok(new ClienteGetDetailsResponse
                 {
-                    Message = "Cliente criado com Sucesso",
+                    Message = "Sucesso",
                     Cliente = await _service.Buscar(id)
                 });
             }
@@ -90,6 +111,12 @@ namespace OrderManagementSystem.Controllers
             }
         }
 
+        /// <summary>
+        /// Ativa ou desativa um cliente.
+        /// </summary>
+        /// <response code="200">Status do cliente atualizado com sucesso.</response>
+        /// <response code="404">Cliente não encontrado.</response>
+        /// <response code="500">Erro Interno de Processamento.</response>
         [HttpPatch("{id}/status")]
         public async Task<ActionResult<ResponseBase>> UpdateStatus(Guid id, bool Ativo)
         {

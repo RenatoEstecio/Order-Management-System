@@ -29,6 +29,7 @@ namespace Library.ResponseDTO
             Descricao = produto.Descricao;
             Preco = produto.Preco;
             Ativo = produto.Ativo;
+            EstoqueDisponivel = produto.EstoqueDisponivel;
             CreatedAt = produto.CreatedAt;
             UpdatedAt = produto.UpdatedAt;
         }

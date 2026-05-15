@@ -34,11 +34,14 @@ namespace Library.Repository
             return _context.Cliente.Any(x => x.Id == id);
         }
 
-        public Task<Cliente> Buscar(Guid id)
+        public Task<Cliente?> Buscar(Guid id)
         {
-            return _context.Cliente.Where(x => x.Id == id).FirstAsync();
-        }     
-
+            return _context.Cliente.Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+        public Task<Cliente?> Buscar(int id)
+        {
+            return _context.Cliente.Where(x => x.ClienteId == id).FirstOrDefaultAsync();
+        }
         public async Task<ClienteListAllResponse> Listar(string? query, int quantidade, int? page)
         {
             var consulta = _context.Cliente.AsQueryable();
@@ -91,15 +94,11 @@ namespace Library.Repository
             }            
             catch (Exception ex)
             {
-                if(ex.Message.Contains("Unique"))
-                    throw new CustomException("Erro: Cliente já cadastrado", HttpStatusCode.BadRequest);
+                if(ex.InnerException != null && ex.InnerException.Message.Contains("UNIQUE"))
+                    throw new CustomException("Cliente já cadastrado", HttpStatusCode.Conflict);
                 else
-                    throw new Exception($"Erro ao cadastrar cliente: {ex.Message}");
-            }
-            finally
-            {
-                await _context.DisposeAsync();
-            }
+                    throw new Exception("Erro ao cadastrar cliente");
+            }          
         }     
     }
 }

@@ -11,6 +11,8 @@ public partial class PedidoHistorico
 
     public int PedidoStatusId { get; set; }
 
+    public string? Motivo { get; set; }
+
     public DateTime CreatedAt { get; set; }
 
     public virtual Pedido Pedido { get; set; } = null!;

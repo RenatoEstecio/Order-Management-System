@@ -53,7 +53,7 @@ namespace Library.BLL
         public async Task AtivarOuDesativar(Guid id, bool acao)
         {
             if (!_repository.Exists(id))
-                throw new CustomException("Não encontrado", HttpStatusCode.BadRequest);
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);
          
             await _repository.AtivarOuDesativar(id, acao);
         }
@@ -63,7 +63,7 @@ namespace Library.BLL
             Cliente? cliente = await _repository.Buscar(id);
 
             if (cliente is null)
-                throw new CustomException("Não encontrado", HttpStatusCode.BadRequest);
+                throw new CustomException("Não encontrado", HttpStatusCode.NotFound);
 
             return new ClienteDetailsResponse(cliente);
         }
