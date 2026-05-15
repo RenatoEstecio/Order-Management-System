@@ -16,9 +16,9 @@ namespace Library.BLL
 {
     public class ProdutoService : IProdutoService
     {
-        private readonly ProdutoRepository _repository;
+        private readonly IProdutoRepository _repository;
 
-        public ProdutoService(ProdutoRepository repository)
+        public ProdutoService(IProdutoRepository repository)
         {
             _repository = repository;
         }

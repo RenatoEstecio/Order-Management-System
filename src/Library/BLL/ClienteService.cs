@@ -13,9 +13,9 @@ namespace Library.BLL
 {
     public class ClienteService: IClienteService
     {
-        private readonly ClienteRepository _repository;
+        private readonly IClienteRepository _repository;
 
-        public ClienteService(ClienteRepository repository)
+        public ClienteService(IClienteRepository repository)
         {
             _repository = repository;
         }
